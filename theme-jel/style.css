@@ -1164,7 +1164,6 @@ LISTE DES BLOCS DE COURS PAR type_de_cours
 
 .home .cours section {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -1304,6 +1303,13 @@ svg {
   margin: 2% 4% 2% 3%;
   padding: 30px;
   border: dashed 3px black;
+}
+
+.nouvelles section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .nouvelles p {
