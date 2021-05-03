@@ -2,16 +2,12 @@ main{
     margin-left: 0px !important;
     margin-right: 0px !important;
 }
-h1.page-title{
-    width: 98vw;
 
-}
 .galerie{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    
 
     div{
         margin: 1%;
@@ -20,12 +16,14 @@ h1.page-title{
 
     /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
-    background-color: transparent;
-    width: 300px;
-    height: 200px;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    background-color: transparent !important;
+    border: none !important;
+    width: 300px !important;
+    height: 200px !important;
+    perspective: 1000px !important; /* Remove this if you don't want the 3D effect */
     margin: 10px;
     margin-bottom: 40px;
+    
   }
   
   /* This container is needed to position the front and back side */
@@ -36,6 +34,11 @@ h1.page-title{
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
+    
+    a{
+      font-size: 1rem !important;
+    }
+    
   }
   
   /* Do an horizontal flip when you move the mouse over the flip box container */
@@ -50,6 +53,7 @@ h1.page-title{
     height: 200px;
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
+    
   }
   
   /* Style the front side (fallback if image is missing) */
@@ -59,6 +63,7 @@ h1.page-title{
     background-color: grey;
     justify-content: center;
     align-items: center;
+    
     img{
       height: 200px;
       width: 300px;
@@ -69,17 +74,21 @@ h1.page-title{
   .flip-card-back {
     background-color: rgb(98, 91, 80);
     color: white;
-    height: 200px;
+    height: 210px;
     transform: rotateY(180deg);
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     h1 a{
-        color: white;
-        font-size: 1rem;
-        text-decoration: none;
+        color: white !important;
+        font-size: 1rem !important;
+        text-decoration: none !important;
     }
     a{
-      color: wheat;
-      text-decoration: none;
+      color: wheat !important;
+      text-decoration: none !important;
     }
     
   }

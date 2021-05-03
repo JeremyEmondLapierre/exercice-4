@@ -1622,10 +1622,6 @@ main {
   margin-right: 0px !important;
 }
 
-h1.page-title {
-  width: 98vw;
-}
-
 .galerie {
   display: flex;
   flex-wrap: wrap;
@@ -1644,10 +1640,11 @@ h1.page-title {
 }
 
 .galerie .flip-card {
-  background-color: transparent;
-  width: 300px;
-  height: 200px;
-  perspective: 1000px;
+  background-color: transparent !important;
+  border: none !important;
+  width: 300px !important;
+  height: 200px !important;
+  perspective: 1000px !important;
   /* Remove this if you don't want the 3D effect */
   margin: 10px;
   margin-bottom: 40px;
@@ -1660,6 +1657,10 @@ h1.page-title {
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
+}
+
+.galerie .flip-card-inner a {
+  font-size: 1rem !important;
 }
 
 .galerie .flip-card:hover .flip-card-inner {
@@ -1690,22 +1691,28 @@ h1.page-title {
 .galerie .flip-card-back {
   background-color: #625b50;
   color: white;
-  height: 200px;
+  height: 210px;
   transform: rotateY(180deg);
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .galerie .flip-card-back h1 a {
-  color: white;
-  font-size: 1rem;
-  text-decoration: none;
+  color: white !important;
+  font-size: 1rem !important;
+  text-decoration: none !important;
 }
 
 .galerie .flip-card-back a {
-  color: wheat;
-  text-decoration: none;
+  color: wheat !important;
+  text-decoration: none !important;
 }
 
+/* Formulaire
+--------------------------------------------- */
 /* footer
 --------------------------------------------- */
 .site-footer {
@@ -1719,7 +1726,10 @@ h1.page-title {
 .site-footer .site-info {
   display: flex;
   flex-direction: row;
-  padding: 20px;
-  justify-content: space-evenly;
+  justify-content: center;
+}
+
+.site-footer .site-info section {
+  margin-right: 20px;
 }
 /*# sourceMappingURL=style.css.map */
