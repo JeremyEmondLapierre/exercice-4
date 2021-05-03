@@ -1634,10 +1634,6 @@ main {
   /* Style the back side */
 }
 
-.galerie div {
-  margin: 1%;
-}
-
 .galerie .flip-card {
   background-color: transparent !important;
   border: none !important;
