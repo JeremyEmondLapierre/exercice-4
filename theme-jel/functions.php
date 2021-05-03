@@ -224,7 +224,17 @@ function extraire_projet($query){
 	}
 }
 
+function extraire_mesprojets($query){
+	if($query->is_category('mesprojets')){
+
+		$query->set('posts_per_page', -1);
+		$query->set('orderby', 'title');
+		$query->set('order', 'asc');
+	}
+}
+
 add_action('pre_get_posts', 'extraire_projet');
+add_action('pre_get_posts', 'extraire_mesprojets');
 
 
 /*
