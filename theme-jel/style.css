@@ -1185,7 +1185,6 @@ LISTE DES BLOCS DE COURS PAR type_de_cours
 
 .home .cours section article:hover:not(.slide__conteneur) {
   transform: scale(1.02);
-  box-shadow: inset 0 0 0 2px white;
 }
 
 .home .cours section article p {
